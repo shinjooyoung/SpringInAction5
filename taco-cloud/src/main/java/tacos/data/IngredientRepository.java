@@ -7,3 +7,4 @@ public interface IngredientRepository {
 	Ingredient findById(String id);
 	Ingredient save(Ingredient ingredient);
 }
+ 
