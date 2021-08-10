@@ -16,7 +16,7 @@ import lombok.Data;
 public class Order {
 	
 	private Long id;
-	private Date createAt;
+	private Date placedAt;
 
 	@NotBlank(message="Name is required")
 	private String deliveryName;
