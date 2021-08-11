@@ -9,7 +9,7 @@
 
 <body>
 	<h1>Design your taco!</h1>
-	<img th:src="@{/images/TacoCloud.jpg}" />
+	<img th:src="@{/images/TacoCloud.png}" />
 	
 	<form method="POST" th:object="${taco}">
 		<span class="validationError"
@@ -67,8 +67,7 @@
 		<div>
 			<h3>Name your taco creation:</h3>
 			<input type="text" th:field="*{name}" />  
-			<span
-				class="validationError" th:if="${#fields.hasErrors('name')}"
+			<span class="validationError" th:if="${#fields.hasErrors('name')}"
 				th:errors="*{name}">Name Error</span> 
 			<br />
 			<button>Submit your taco</button>
